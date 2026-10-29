@@ -146,7 +146,7 @@ public extension Binding {
     }
 }
 
-extension Binding where Value == Bool {
+public extension Binding where Value == Bool {
     /// True while `value` is non-nil; setting it to false sets `value` to nil
     ///
     ///     DSToast(..., isShowing: Binding(isPresent: $selectedLead))
@@ -169,7 +169,7 @@ extension Binding where Value == Bool {
     }
 }
 
-extension Optional {
+public extension Optional {
     /// A Bool binding that is true while this value is non-nil; setting it to false calls `onDismiss`.
     /// The optional is a copy, so `onDismiss` is what clears the real source.
     ///
